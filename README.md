@@ -91,31 +91,31 @@ In-depth offensive theory, syntax tree mechanics, code comparisons, and interact
 1. **Lab 1: Login Authentication Bypass** (`/api/labs/login`)
    - Scenario: RedCorp Executive Gateway authentication bypass.
    - Objective: Log in as `admin` without knowing the secret password.
-   - Flag: `FLAG{RED_TEAM_AUTH_BYPASS_99}`
+   - Flag: `FLAG{}`
 2. **Lab 2: Search Parameter Injection** (`/api/labs/search`)
    - Scenario: Product Catalog search inside a `LIKE '%query%'` clause.
    - Objective: Bypass the `is_public = 1` constraint to dump unlisted classified military cyber tools.
-   - Flag: `FLAG{SEARCH_UNLISTED_ASSET_FOUND_42}`
+   - Flag: `FLAG{}`
 3. **Lab 3: Product SKU Numeric Injection** (`/api/labs/product`)
    - Scenario: Unquoted numeric parameter query (`WHERE id = {id}`).
    - Objective: Prove that injection does not require single quotes by injecting `1 OR 1=1`.
-   - Flag: `FLAG{NUMERIC_ID_TAUTOLOGY_31}`
+   - Flag: `FLAG{}`
 4. **Lab 4: UNION-Based Data Exfiltration** (`/api/labs/employees`)
    - Scenario: Public employee directory query returning 3 columns.
    - Objective: Determine column count and extract rows from the restricted `secret_credentials` table.
-   - Flag: `FLAG{UNION_DATA_EXFILTRATED_77}`
+   - Flag: `FLAG{}`
 5. **Lab 5: Boolean-Based Blind SQLi** (`/api/labs/user-check`)
    - Scenario: User verification endpoint with no direct data output.
    - Objective: Infer the administrator's secret 4-digit PIN (`7492`) via Boolean TRUE/FALSE responses.
-   - Flag: `FLAG{BLIND_BOOLEAN_PIN_DISCOVERED}`
+   - Flag: `FLAG{}`
 6. **Lab 6: Error-Based Diagnostic Leak** (`/api/labs/order-status`)
    - Scenario: Order status lookup with verbose debug error reporting enabled.
    - Objective: Force an informative database exception to leak diagnostic telemetry and internal flags.
-   - Flag: `FLAG{ERROR_BASED_VERSION_LEAKED_55}`
+   - Flag: `FLAG{}`
 7. **Lab 7: Time-Based Blind Latency Probe** (`/api/labs/feedback`)
    - Scenario: Security feedback submission logging into an internal database.
    - Objective: Measure clock latency using injected delay functions (`sleep(2)`) to verify code execution.
-   - Flag: `FLAG{TIME_BASED_LATENCY_CRACKED_88}`
+   - Flag: `FLAG{}`
 
 ---
 
